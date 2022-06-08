@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Pedido } from "../../types/pedido";
 import TablePrazo from "../TablePrazo";
 import { fonteSimples } from "../UI/variaveis";
 
@@ -7,7 +8,11 @@ const StyledRow = styled.tr`
   font-family: ${fonteSimples};
 `;
 
-const TableRow = ({ pedido }) => {
+type TableRowProps = {
+  pedido: Pedido
+}
+
+const TableRow = ({ pedido } : TableRowProps) => {
   const { id, status, statusTempo, praca, tempo } = pedido;
 
   return (
