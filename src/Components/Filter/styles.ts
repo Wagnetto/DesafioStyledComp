@@ -1,10 +1,8 @@
-import React from 'react';
-import filtro from '../../assets/filtro.png';
-import search from '../../assets/search.png';
 import styled from 'styled-components';
+import search from '../../assets/search.png';
 import { fonteSimples } from '../UI/variaveis';
 
-const StyledFilter = styled.section`
+export const StyledFilter = styled.section`
   margin: 0.5rem 1rem;
   display: flex;
   font-family: ${fonteSimples};
@@ -31,17 +29,3 @@ const StyledFilter = styled.section`
     }
   }
 `;
-
-const FiltroContainer = () => {
-  return (
-    <StyledFilter>
-      <input type="search" id="search" placeholder="Buscar por número do pedido" />
-      <button>
-        Filtros
-        <img src={filtro} alt="Filtro de Busca" />
-      </button>
-    </StyledFilter>
-  );
-};
-
-export default FiltroContainer;
