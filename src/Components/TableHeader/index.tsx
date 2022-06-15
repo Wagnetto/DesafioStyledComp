@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './styles';
-//import setaParaBaixo from '../../assets/chevron-down.png';
+import setaParaBaixo from '../../assets/chevron-down.png';
 
 const TableHeader = () => (
   <S.StyledTableHeader>
