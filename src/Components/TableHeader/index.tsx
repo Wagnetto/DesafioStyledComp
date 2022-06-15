@@ -1,27 +1,12 @@
 import React from "react";
-import styled from "styled-components";
-import { fonteSimples } from "../UI/variaveis";
+import * as S from "./styles"
 import setaParaBaixo from "../../assets/chevron-down.png"
 
-const StyledTableHeader = styled.thead`
-    font-family: ${fonteSimples};
-    font-weight: bolder;
-    
 
-    th > img {
-        margin-left: 5px;
-        margin-bottom: -8px;
-    }    
-    
-`
-
-const ColunaPedidos = styled.th`
-    text-align: center;
-`
 
 const TableHeader = () => {
     return(
-        <StyledTableHeader>
+        <S.StyledTableHeader>
             <tr>
                 <th>Número do pedido</th>
                 <th>Status do pedido</th>
@@ -30,12 +15,12 @@ const TableHeader = () => {
                     <img src={setaParaBaixo} alt="seta para baixo"></img>
                 </th>
                 <th>Praça</th>
-                <ColunaPedidos>
+                <S.ColunaPedidos>
                     Pedidos
                     <img src={setaParaBaixo} alt="seta para baixo"></img>
-                </ColunaPedidos>
+                </S.ColunaPedidos>
             </tr>
-        </StyledTableHeader>
+        </S.StyledTableHeader>
     )
 };
 
