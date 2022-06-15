@@ -2,7 +2,6 @@ import React from 'react';
 import * as S from './styles';
 import filtro from '../../assets/filtro.png';
 
-
 const FiltroContainer = () => {
   return (
     <S.StyledFilter>
