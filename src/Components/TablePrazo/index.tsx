@@ -3,11 +3,11 @@ import { Cor } from '../../types/cor';
 import * as S from './styles';
 
 type TablePrazoProps = {
-  tempo: number,
-}
+  tempo: number;
+};
 
 const TablePrazo = ({ tempo }: TablePrazoProps) => {
-  let cor: Cor = 'red'
+  let cor: Cor = 'red';
   if (tempo > 0 && tempo < 10) {
     cor = 'yellow';
   }

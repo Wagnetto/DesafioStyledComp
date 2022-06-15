@@ -1,14 +1,13 @@
-import React from "react";
-import { Pedido } from "../../types/pedido";
-import TablePrazo from "../TablePrazo";
+import React from 'react';
+import { Pedido } from '../../types/pedido';
+import TablePrazo from '../TablePrazo';
 import * as S from './styles';
 
-
 type TableRowProps = {
-  pedido: Pedido
-}
+  pedido: Pedido;
+};
 
-const TableRow = ({ pedido } : TableRowProps) => {
+const TableRow = ({ pedido }: TableRowProps) => {
   const { id, status, statusTempo, praca, tempo } = pedido;
 
   return (
